@@ -26,4 +26,30 @@ img {
 
 .pig_img {
   width: 20%;
+  margin-bottom: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.player_container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.current_score_container {
+  text-align: center;
+  border: solid 1px black;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 10px;
 }
