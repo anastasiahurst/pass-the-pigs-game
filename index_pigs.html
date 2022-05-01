@@ -9,8 +9,11 @@
   </head>
   <body>
     <header>
-      <h1>Pass The Pigs</h1>
-      <img class="pig_img" src="/pig.png" alt="pig" />
+      <button class="btn btn--new">🔄 New game</button>
+      <div>
+        <h1>Pass The Pigs</h1>
+        <img class="pig_img" src="/pig.png" alt="pig" />
+      </div>
     </header>
 
     <!-- Main game section starts here, and it will be divided into further 2 sections for player 1 and player 2 -->
@@ -34,6 +37,11 @@
           <p class="current_score current_score_player2">0</p>
         </div>
       </div>
+
+      <!-- dice images and buttons -->
+      <img class="dice_img" src="/dice5.png" alt="dice" />
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
     </main>
 
     <script src="/pigs_js.js"></script>

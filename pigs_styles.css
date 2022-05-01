@@ -12,6 +12,8 @@ body {
     #ffd194,
     #70e1f5
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Nunito", sans-serif;
+  position: relative;
 }
 
 header {
@@ -37,6 +39,15 @@ main {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(200px);
+  overflow: hidden;
+  position: relative;
+}
+.btn--new {
+  left: 1%;
+}
+
+h2 {
+  color: rgb(4, 92, 83);
 }
 
 .player_container {
@@ -45,12 +56,69 @@ main {
   flex-direction: column;
   align-items: center;
   text-transform: uppercase;
+  position: relative;
+}
+.player1_container {
+  background-color: rgb(217, 247, 244);
 }
 
 .current_score_container {
   text-align: center;
-  border: solid 1px black;
-  margin: 2rem auto;
+  margin: 3rem auto;
   padding: 1rem;
   border-radius: 10px;
+  background-color: rgb(91, 195, 192);
+}
+
+.total_score {
+  margin-top: 1px;
+}
+
+.total_score {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.dice_img {
+  position: absolute;
+  width: 10%;
+  left: 50%;
+  top: 4rem;
+  transform: translateX(-50%);
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(33, 33, 33);
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+.btn--new {
+  left: 10%;
+}
+.btn--roll {
+  top: 13.3rem;
+}
+.btn--hold {
+  top: 18.1rem;
 }
