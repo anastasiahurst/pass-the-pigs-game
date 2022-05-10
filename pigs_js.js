@@ -3,17 +3,23 @@ let score0El = document.querySelector(".total_score_player0");
 let score1El = document.querySelector(".total_score_player1");
 let current0El = document.querySelector(".current_score_player0");
 let current1El = document.querySelector(".current_score_player1");
-let currentScore = document.querySelector(".current_score");
+let currentScoreEl = document.querySelector(".current_score");
 let diceEl = document.querySelector(".dice");
 let btnRoll = document.querySelector(".btn--roll");
 let btnHold = document.querySelector(".btn--hold");
 let btnNew = document.querySelector(".btn--new");
 
-score0El.textContent = 0;
-score1El.textContent = 0;
-current0El.textContent = 0;
-current1El.textContent = 0;
-currentScore.textContent = 0;
+let score0ElValue = score0El.textContent;
+let score1ElValue = score1El.textContent;
+let current0ElValue = current0El.textContent;
+let current1ElValue = current1El.textContent;
+let currentScoreValue = currentScoreEl.textContent;
+
+score0ElValue = 0;
+score1ElValue = 0;
+current0ElValue = 0;
+current1ElValue = 0;
+currentScoreValue = 0;
 
 // adding HIDDEN class to the dice, so it disappears
 diceEl.classList.add("hidden");
@@ -25,9 +31,9 @@ btnRoll.addEventListener("click", function () {
   diceEl.src = `dice${diceNumber}.png`;
 
   if (diceNumber !== 1) {
-    currentScore += diceNumber;
-    console.log(currentScore);
-    // current0El.textContent = currentScore;
+    currentScoreValue += diceNumber;
+    console.log(currentScoreValue);
+    current0El.textContent = currentScoreValue;
   } else {
   }
 });
