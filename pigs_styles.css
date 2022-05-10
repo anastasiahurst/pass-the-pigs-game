@@ -59,7 +59,7 @@ h2 {
   text-transform: uppercase;
   position: relative;
 }
-.player1_container {
+.active_overlay {
   background-color: rgb(217, 247, 244);
 }
 
