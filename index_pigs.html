@@ -21,7 +21,9 @@
       <!-- Left section for player 1 -->
       <div class="player_container player0_container" id="player0_container">
         <h2>Player 1</h2>
-        <p class="total_score total_score_player0">0</p>
+        <p class="total_score total_score_player0" id="total_score_player0">
+          0
+        </p>
         <div class="current_score_container">
           <p>Current score</p>
           <p
@@ -36,7 +38,9 @@
       <!-- Right section for player 2 -->
       <div class="player_container player1_container" id="player1_container">
         <h2>Player 2</h2>
-        <p class="total_score total_score_player1">0</p>
+        <p class="total_score total_score_player1" id="total_score_player1">
+          0
+        </p>
         <div class="current_score_container">
           <p>Current score</p>
           <p
@@ -52,6 +56,12 @@
       <img class="dice" src="/dice5.png" alt="dice" />
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
+      <div class="modal hidden winner_box">
+        <button class="close_modal">&times;</button>
+        <img class="trophy" src="/trophy.png" alt="trophy" />
+        <h2 id="winner_text">Player is a winner!</h2>
+        <h3 class="winning_score_modal">Winning score</h3>
+      </div>
     </main>
 
     <script src="/pigs_js.js"></script>
